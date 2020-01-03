@@ -25,11 +25,11 @@ async def _(event):
     reply_to_id = event.message.id
     if event.reply_to_msg_id:
         reply_to_id = event.reply_to_msg_id
-    await event.edit("<i><b>Searching For Song...</b></i>")    
+    await event.edit("**Searching For Song...**")    
     bruh(str(cmd))
     lol = glob.glob("*.mp3")
     loa = lol[0]
-    await event.edit("<b>Sending Song..</b>")
+    await event.edit("**__Sending Song..__**")
     
     await event.client.send_file(
                 event.chat_id,
