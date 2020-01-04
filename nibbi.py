@@ -29,7 +29,7 @@ async def _(event):
     bruh(str(cmd))
     lol = glob.glob("*.mp3")
     loa = lol[0]
-    await event.edit("**__Sending Song..__**")
+    await event.edit("**__Sending Song...__**")
     
     await event.client.send_file(
                 event.chat_id,
