@@ -92,7 +92,7 @@ async def git_commit(file_name,mone):
 				os.remove(f)
 			link =  "https://github.com/" + Config.GIT_USER_NAME + "/" + reponame + "/blob/master/" + file_name
 			rawlink = "https://raw.githubusercontent.com/" + Config.GIT_USER_NAME + "/" + reponame + "/master/" + file_name
-			await mone.edit("**__Committed on Your Github Repo.\n\nLink: **__" + link + "**__\n\nRAW Link: **__`" + rawlink + "`")
+			await mone.edit("**__Committed on Your Github Repo.\n\nLink: **__" + link + "**__\n\nRAW Link: **__" + rawlink + "")
 		except:
 			print("Cannot Create Plugin")
 			await mone.edit("Cannot Upload Plugin")
