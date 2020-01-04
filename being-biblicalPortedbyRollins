@@ -28,7 +28,7 @@ async def _(event):
 
     await asyncio.sleep(2)
 
-    x=(random.randrange(98,101))
+    x=(random.randrange(1,100))
 
     if x==1:
 
@@ -417,14 +417,6 @@ async def _(event):
     if x==97:
 
         await event.edit("**__\"If we put solar panels above parking lots, then our cars wouldn't get hot and we would have a lot of clean energy.\"**__")
-        
-    if x==98:
-        
-        await event.edit("**__\"By faith Abraham, when he was called to go out into a place which he should after receive for an inheritance, obeyed; and he went out, not knowing whither he went.  <Hebrews 11:8>.\"**__")
-        
-    if x==99:
-        
-        await event.edit("**__\"By faith Noah, being warned of God of things not seen as yet, moved with fear, prepared an ark to the saving of his house; by the which he condemned the world, and became heir of the righteousness which is by faith.  <Hebrews 11:7>.\"**__")
         
     if x==100:
         
