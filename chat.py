@@ -37,7 +37,7 @@ async def useridgetter(target):
 @register(outgoing=True, pattern="^.chatid$")
 async def chatidgetter(chat):
     """ For .chatid, returns the ID of the chat you are in at that moment. """
-    await chat.edit("**__Chat ID:__**\n**__" + str(chat.chat_id) + "**__")
+    await chat.edit("**__Chat ID:__**\n`" + str(chat.chat_id) + "`")
 
 
 @register(outgoing=True, pattern=r"^.log(?: |$)([\s\S]*)")
