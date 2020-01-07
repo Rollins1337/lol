@@ -146,7 +146,7 @@ class AntiPMMod(loader.Module):
         		return
         	else:
         		self._db.set(__name__, "msglimit", int(count))
-        		await message.edit(_("**__Maximum message limit has been successfully set to " + str(count) + ".**__"))
+        		await message.edit(_("**__Maximum message limit has been successfully set to**__ " + str(count) + "."))
     
     async def watcher(self, message):
         if getattr(message.to_id, "user_id", None) == self._me.user_id:
